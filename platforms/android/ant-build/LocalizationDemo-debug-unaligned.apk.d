@@ -1,4 +1,4 @@
-/Users/iohan/AeroFS/development/MAC/gitprojmac/localizationdemo/platforms/android/ant-build/LocalizationDemo-debug-unaligned.apk : \
-/Users/iohan/AeroFS/development/MAC/gitprojmac/localizationdemo/platforms/android/ant-build/LocalizationDemo.ap_ \
-/Users/iohan/AeroFS/development/MAC/gitprojmac/localizationdemo/platforms/android/ant-build/classes.dex \
-/Users/iohan/AeroFS/development/MAC/gitprojmac/localizationdemo/platforms/android/CordovaLib/ant-build/classes.jar \
+/Users/iohan/Development/GitHub/localizationdemo/platforms/android/ant-build/LocalizationDemo-debug-unaligned.apk : \
+/Users/iohan/Development/GitHub/localizationdemo/platforms/android/ant-build/LocalizationDemo.ap_ \
+/Users/iohan/Development/GitHub/localizationdemo/platforms/android/ant-build/classes.dex \
+/Users/iohan/Development/GitHub/localizationdemo/platforms/android/CordovaLib/ant-build/classes.jar \
