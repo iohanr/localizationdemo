@@ -199,21 +199,189 @@
         </PostBuildEvent>
     </PropertyGroup>
     <ItemGroup>
+        <Compile Include="Plugins\org.apache.cordova.globalization\Globalization.cs" />
+    </ItemGroup>
+    <ItemGroup>
         <Content Include="www\cordova.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\cordova_plugins.js" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="www\index.html" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Plugins\org.apache.cordova.globalization\Globalization.cs" />
+        <Content Include="www\js\lib\cultures\globalize.culture.en-GB.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www\plugins\org.apache.cordova.globalization\www\GlobalizationError.js" />
+        <Content Include="www\js\lib\cultures\globalize.culture.en-US.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\cultures\globalize.culture.es-ES.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\cultures\globalize.culture.es-US.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\globalize.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\q.min.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\require.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\text.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\arrow-corners-inward@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\arrow-corners-outward@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\bookmark@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\books@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\brightness-less@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\brightness-more@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\camera-video@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\camera@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\chat-bubble-dots@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\chat-bubble@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\checkmark@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\chevron-left-thick@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\chevron-left-thin@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\chevron-right-thick@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\chevron-right-thin@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\circle-filled-checked@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\circle-filled@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\circle-hollow@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\circle-info@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\circle-outlined@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\clock@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\delete@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\download@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\film@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\gear@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\gps-locate@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\list@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\magnifying-glass@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\menu@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\more@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\page-text-new@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\pause-filled@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\pause-hollow@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\pencil@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\photo-add@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\photo@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\play-filled@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\play-hollow@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\plus@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\share@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\sound-wave@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\square-filled@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\square-hollow@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\tag@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf-assets\trash@2x.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf.css" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\lib\yasmf.min.js" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="www\plugins\org.apache.cordova.globalization\www\globalization.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www\cordova_plugins.js" />
+        <Content Include="www\plugins\org.apache.cordova.globalization\www\GlobalizationError.js" />
     </ItemGroup>
 </Project>
