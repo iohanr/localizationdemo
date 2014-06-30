@@ -36,6 +36,7 @@
           print ( "314159.14159 (4): " + _y.N(314159.14159, "4") );
           // negative; 2 decimals
           print ( "-314159.14159 (2): " + _y.N(314159.14159, "2") );
+          print ( "&nbsp;" );
           
           // currency
           // no format
@@ -44,10 +45,38 @@
           print ( "314159.14159 (4): " + _y.C(314159.14159, "4") );
           // negative; 2 decimals
           print ( "-314159.14159 (2): " + _y.C(314159.14159, "2") );
+          print ( "&nbsp;" );
           
+          // percents
+          // no format
+          print ( ".0314159% (d): " + _y.PCT(.0314159) );
+          // 4 decimal places
+          print ( ".0314159% (4): " + _y.PCT(.0314159, "4") );
+          // 2 decimals
+          print ( ".0314159% (2): " + _y.PCT(.0314159, "2") );
           print ( "&nbsp;" );
+          
+          // dates
+          print ( "Today's date, default: " + _y.D( new Date() ) );
+          print ( "Today's date, D: " + _y.D( new Date(), "D" ) );
+          print ( "Today's date, f: " + _y.D( new Date(), "f" ) );
+          print ( "Today's date, F: " + _y.D( new Date(), "F" ) );
+          print ( "Today's date, t: " + _y.D( new Date(), "t" ) );
+          print ( "Today's date, T: " + _y.D( new Date(), "T" ) );
+          print ( "Today's date, Y: " + _y.D( new Date(), "Y" ) );
+          print ( "Today's date, M: " + _y.D( new Date(), "M" ) );
+          print ( "Today's date, all: " + _y.D( new Date(), "d dd ddd dddd M MM MMM MMMM yy yyyy m mm h hh H HH s ss f ff fff t tt z zz zzz g gg" ) );
           print ( "&nbsp;" );
+          
+          // translations
+          print("HELLO: " + _y.T("HELLO"));
+          print("GOODBYE: " + _y.T("GOODBYE"));
+          print("HELLO_%NAME%: " + _y.T("HELLO_%NAME%", {"NAME": "Mary"}));
+          print("ONLY_ONE_KEY: " + _y.T("ONLY_ONE_KEY"));
+          print("HIERARCHY: " + _y.T("HIERARCHY"));
+          print("MISSING_%KEY%: " + _y.T("MISSING_%KEY%", {"KEY": "Replacement"}));
           print ( "&nbsp;" );
+          
         }
         function startApp () {
           // use current locale first
@@ -60,6 +89,19 @@
           doLocalizationDemos();
           _y.currentUserLocale = "es-ES";
           doLocalizationDemos();
+          
+          _y.addTranslation("EN","HELLO","Hello");
+          _y.addTranslation("ES","HELLO","Hola");
+          _y.addTranslations({"GOODBYE": {"EN": "Goodbye",
+                             "ES": "Adios"},
+                             "HELLO_%NAME%": {"EN": "Hello %NAME%",
+                             "ES": "Hola %NAME%" },
+                             "ONLY_ONE_KEY": {"EN": "We only have an English translation" },
+                             "HIERARCHY": {"EN": "Generic English",
+                             "EN-US": "American English",
+                             "ES": "Generic Spanish",
+                             "ES-US": "Spanish (United States)" }
+          } );
         }
         _y.executeWhenReady ( function () { _y.getDeviceLocale( startApp ); } );
       </script>
